@@ -7,4 +7,6 @@
 ## 5 - response headers
 ## apiKeys - troll
 
+## Depoloy:
+
 > To deploy on localhost, create the mysql databases and use the command php -S localhost:<port>
