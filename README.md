@@ -9,4 +9,4 @@
 
 ## Deploy:
 
-> To deploy on localhost, create the mysql databases and use the command php -S localhost:**port**
+> To deploy on localhost, create the mysql databases (code for db for sql injection is already in sqlidemo.sql). For Challenge 2 you have to create a simple db (tut) with table users and columns: id, username, password. Use the command php -S localhost:**port**
