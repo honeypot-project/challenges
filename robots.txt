@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: Challenges/3-AdminPanel
+Disallow: Challenges/apiKeys

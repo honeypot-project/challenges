@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'MrRobot';
+    font-style: normal;
+    font-weight: normal;
+    src: url("/assets/fonts/MR ROBOT.woff") format("woff");
+}
+
+html, body {
+    font-family: 'MrRobot', serif;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #28282B;
+}
+
+
+body {
+    display: flex;
+}
+
+#challenges {
+    display: flex;
+    flex-direction: column;
+    color: red;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+ul {
+    align-self: center;
+    margin: 0 0 0 3rem;
+
+}
+
+p {
+    text-align: center;
+    margin: 1rem;
+    letter-spacing: 0.125rem;
+    display: inline-block;
+}
+
+a {
+    font-family: 'MrRobot', serif;
+    color: white;
+}
