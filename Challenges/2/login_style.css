@@ -11,7 +11,7 @@ h1, h3, a {
 }
 .form {
   max-width: 360px;
-  padding: 45px;
+  padding-top: 45px;
 }
 
 .button:hover {
@@ -73,4 +73,30 @@ a {
 
 .topcorner {
   text-align: center;
+}
+
+.hint {
+  text-align: center;
+  color: white;
+}
+
+.error {
+  color: white;
+}
+
+h1, h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+img {
+  width: auto;
+  padding-top: 1rem;
+}
+
+#challenge5 {
+  text-align: left;
 }

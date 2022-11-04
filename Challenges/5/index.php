@@ -7,10 +7,11 @@ header('This-is-odd: L1MzQ1JFVC50eHQ=');
 <head>
     <meta charset="UTF-8">
     <title>HoneyPot 16</title>
+    <link rel="stylesheet" type="text/css" href="/Challenges/2/login_style.css">
     <!--<p>Keep looking, it's not hidden in the HTML</p>-->
 </head>
 <body>
-<h1>I am hidden in plain sight</h1>
+<h1 id="challenge5">I am hidden in plain sight</h1>
 
 <img src="/Challenges/5/answer.jpg" alt="answer" title="synonym">
 
