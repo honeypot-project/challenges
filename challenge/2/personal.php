@@ -1,7 +1,7 @@
 <head>
     <title>Personal</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/Challenges/2/login_style.css">
+    <link rel="stylesheet" href="/challenge/2/login_style.css">
 </head>
 
 <?php
@@ -19,11 +19,11 @@
             echo "<center><h2>FLAG{INSECURE-COOKI3-VULNERABILITY}</h2></center>";
         }
 
-        echo "<div class='topcorner'><a href='/Challenges/2/logout.php'>Logout</a></div>";
+        echo "<div class='topcorner'><a href='/challenge/2/logout.php'>Logout</a></div>";
     }
     else
     {
-        echo  "<center><h1>You are not logged in!</h1><br><h3><a href='/Challenges/2/index.php'>Home<a></h3</center>";
+        echo "<center><h1>You are not logged in!</h1><br><h3><a href='/challenge/2/index.php'>Home<a></h3</center>";
     }
 
     ?>

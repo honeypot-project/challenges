@@ -41,7 +41,7 @@ if (!empty($_POST)) {
     <meta charset="UTF-8">
     <title>HoneyPot 16</title>
     <meta name="description" content="Hint: Use SQL injection to bypass authentication and login as Admin!">
-    <link rel="stylesheet" type="text/css" href="/Challenges/2/login_style.css">
+    <link rel="stylesheet" type="text/css" href="/challenge/2/login_style.css">
 </head>
 <body>
 <?php if (!$authorized) { ?>
@@ -70,7 +70,7 @@ if (!empty($_POST)) {
         <p>You have successfully bypassed authentication security.</p>
         <h2>FLAG{YOU-ARE-A-BEAST-GOOD-JOB-NERD}</h2>
         <form><input class="logout" type="submit" value="Logout"></form>
-        <img src="/Challenges/4/hackerman.jpg" alt="Hackerman!">
+        <img src="/challenge/4/hackerman.jpg" alt="Hackerman!">
     </div>
 
 <?php } else { ?>

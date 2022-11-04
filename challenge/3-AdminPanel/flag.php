@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="/Challenges/3-AdminPanel/style.css">
+<link rel="stylesheet" type="text/css" href="/challenge/3-AdminPanel/style.css">
 <?php
 
 $flag = "<h3>FLAG{DEFAULT-CREDENTIALS-ARE-A-NO-GO}</h3>";

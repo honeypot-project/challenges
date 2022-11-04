@@ -20,7 +20,7 @@ if (isset($msg)) {
     <meta charset="UTF-8">
     <title></title>
     <title>honeypot 16</title>
-    <link rel="stylesheet" href="/Challenges/1/screen.css">
+    <link rel="stylesheet" href="/challenge/1/screen.css">
 </head>
 <body>
 
@@ -32,7 +32,7 @@ if (isset($msg)) {
         <br>
         <input type="button" value="Submit" id="button" onclick="getvalue();">
     </form>
-    <img src="/Challenges/1/reflect.png" alt="frog">
+    <img src="/challenge/1/reflect.png" alt="frog">
 
 </div>
 

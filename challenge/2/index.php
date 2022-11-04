@@ -3,7 +3,7 @@
 $cookie_name = "session";
 
 if (isset($_COOKIE[$cookie_name])) {
-    header("Location: /Challenges/2/personal.php");
+    header("Location: /../2/personal.php");
 }
 ?>
 
@@ -15,14 +15,14 @@ if (isset($_COOKIE[$cookie_name])) {
     <title>honeypot 16</title>
     <meta name="description" content="HINT: become admin!!!">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/Challenges/2/login_style.css">
+    <link rel="stylesheet" href="/challenge/2/login_style.css">
 </head>
 <body>
 <center><br><br><br><br><br><br><br>
     <h1 class="container">Login/Register</h1>
 
     <div class="form">
-        <form action="/Challenges/2/logreg.php" method="post" accept-charset="utf-8">
+        <form action="/challenge/2/logreg.php" method="post" accept-charset="utf-8">
             <label>Username: </label><input type="text" name="username" value="" placeholder="Username"
                                             required><br><br>
             <label>Password: </label><input type="password" name="password" value="" placeholder="Password"
