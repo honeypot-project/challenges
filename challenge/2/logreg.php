@@ -32,9 +32,9 @@ if (isset($_POST["login"])) {
     if ($count >= 1) {
         $cookie_value = base64_encode($user);
         setrawcookie($cookie_name, $cookie_value, time() + (10 * 365 * 24 * 60 * 60), "/");
-        header("Location: /../2/personal.php");
+        header("Location: personal.php");
     } else {
-        echo "<h1>Username or password is incorrect!</h1><br><br><h3><a href='/challenge/2/index.php'>Home</a><h3>";
+        echo "<h1>Username or password is incorrect!</h1><br><br><h3><a href='./'>Home</a><h3>";
     }
 
     $stmt->close();
@@ -45,7 +45,7 @@ if (isset($_POST["login"])) {
     $pass = $_POST["password"];
 
     if (!isset($user)) {
-        echo "Please fill in both the username and password field. <br><br> <a href='/challenge/2/index.php'>Home</a>";
+        echo "Please fill in both the username and password field. <br><br> <a href='./'>Home</a>";
     }
 
     $stmt = $conn->prepare("SELECT * FROM users WHERE username= ? ");
@@ -57,7 +57,7 @@ if (isset($_POST["login"])) {
     $count = mysqli_num_rows($result);
 
     if ($count != 0) {
-        echo "<h1>An account with that username already exists.</h1><br><br><h3><a href='/challenge/2/index.php'>Home</a></h3>";
+        echo "<h1>An account with that username already exists.</h1><br><br><h3><a href='./'>Home</a></h3>";
         return;
     }
 
@@ -71,14 +71,12 @@ if (isset($_POST["login"])) {
 
         $success = $stmt->execute();
 
-        echo ("<script>console.log($success);</script>");
-
         if ($success) {
-            echo "<h1>Account registered successfully!</h1><br><br><h3><a href='/challenge/2/index.php'>Login</a><h3>";
+            echo "<h1>Account registered successfully!</h1><br><br><h3><a href='./'>Login</a><h3>";
             return;
         }
 
-        echo "<h1>Failed to create account</h1><br><br><h3><a href='/challenge/2/index.php'>Go back</a><h3>";
+        echo "<h1>Failed to create account</h1><br><br><h3><a href='./'>Go back</a><h3>";
     }
     $stmt->close();
     $conn->close();
