@@ -29,22 +29,20 @@ if (isset($_POST["login"])) {
 
     $count = mysqli_num_rows($result);
 
-            if ($count >= 1){
-                $cookie_value = base64_encode($user);
-                setrawcookie($cookie_name, $cookie_value, time() + (10 * 365 * 24 * 60 * 60), "/");
-                header("Location: /Challenges/2/personal.php");
-            }
-            else {
-                echo "<center><h1>Username or password is incorrect!</h1><br><br><h3><a href='/Challenges/2/index.php'>Home</a><h3></center>";
-            }
-
-        } else {
-            echo "Something went wrong";
-        }
+    if ($count >= 1) {
+        $cookie_value = base64_encode($user);
+        setrawcookie($cookie_name, $cookie_value, time() + (10 * 365 * 24 * 60 * 60), "/");
+        header("Location: /Challenges/2/personal.php");
+    } else {
+        echo "<h1>Username or password is incorrect!</h1><br><br><h3><a href='/Challenges/2/index.php'>Home</a><h3>";
     }
-    elseif (isset($_POST["register"])) {
-        $user = $_POST["username"];
-        $pass = $_POST["password"];
+
+    $stmt->close();
+    $conn->close();
+
+} elseif (isset($_POST["register"])) {
+    $user = $_POST["username"];
+    $pass = $_POST["password"];
 
     if (!isset($user)) {
         echo "Please fill in both the username and password field. <br><br> <a href='/Challenges/2/index.php'>Home</a>";
