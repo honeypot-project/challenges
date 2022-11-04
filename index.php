@@ -26,7 +26,6 @@
     <p>Welcome to our challenge panel</p>
     <p>Solve the challenges and submit the flags <br><br><a href="#">on this link</a><br><br>HAVE FUN!!!</p>
     <p>Greetings from <br>Ali, Miguel, Sinan</p>
-
 </div>
 
 </body>
