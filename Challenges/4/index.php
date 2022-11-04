@@ -35,7 +35,6 @@ if (!empty($_POST)) {
 }
 ?>
 
-<!-- Render HTML-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -131,7 +130,6 @@ input.logout {
     <br>with a valid user.
 <!--    <br>Hint: Use SQL injection to bypass authentication and login as Admin!</p>-->
 
-<!-- Successful injection page -->
 <?php } else if ($_POST['username'] != $user || $_POST['password'] != $pass) { ?>
     <div>
         <h2>Welcome <?php echo $user;?>!</h2>
@@ -143,7 +141,6 @@ input.logout {
         <form><input class="logout" type="submit" value="Logout"></form>
     </div>
 
-<!-- Normal user home page -->
 <?php } else {?>
      <div>
         <h2>Welcome <?php echo $user;?>!</h2>

@@ -1,44 +1,47 @@
 <?php
 error_reporting(0);
-$msg='';
-$flag='';
+$msg = '';
+$flag = '';
 
-$msg=($_GET['msg']);
+$msg = ($_GET['msg']);
 
-if(isset($msg)){
-    if($msg=="<img src='' onerror=alert(1)>"){
-        $flag='FLAG{XSS-IS-EASY-PEASY-LEMON-SQEEZY}';
-        $msg= $msg;
-    }
-    else if ($msg){
-        $msg= htmlspecialchars($msg);
+if (isset($msg)) {
+    if ($msg == "<img src='' onerror=alert(1)>" || $msg == '<img src="" onerror=alert(1)') {
+        $flag = 'FLAG{XSS-IS-EASY-PEASY-LEMON-SQEEZY}';
+    } else if ($msg) {
+        $msg = htmlspecialchars($msg);
     }
 }
-else{}
 ?>
 
-<!DOCTYPE html><html lang="en">
-<head><meta charset="UTF-8"><title></title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <title>honeypot 16</title>
+    <link rel="stylesheet" href="/Challenges/1/screen.css">
 </head>
 <body>
 
 <h2> <?php echo $msg; ?><br><?php echo $flag; ?> </h2>
-<img src="/Challenges/1/reflect.png">
-<form id="myForm">
 
-    <input id="msg" type="text" name="msg" value="">
-    <br>
-    <input type="button" value="Submit" onclick="getcontent();">
-</form>
+<div id="flexcontainer">
+    <form id="myForm">
+        <input id="msg" type="text" name="msg" value="">
+        <br>
+        <input type="button" value="Submit" id="button" onclick="getvalue();">
+    </form>
+    <img src="/Challenges/1/reflect.png">
+
+</div>
 
 <script type="text/javascript">
-  function getcontent(){
+  function getvalue () {
 
-    document.getElementById("msg").value= document.getElementById("msg").value;
-
-    document.getElementById("myForm").submit();
+    document.querySelector('#msg').value = document.getElementById('msg').value
+    document.querySelector('#myForm').submit()
   }
-
 </script>
 
 </body>

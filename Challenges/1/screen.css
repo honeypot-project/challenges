@@ -1,0 +1,44 @@
+body {
+    background-color: #4d4d4d;
+}
+
+#myForm {
+
+}
+
+#myForm input {
+    font-family: FontAwesome, "Roboto", sans-serif;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+
+#button:hover,.form button:focus {
+    background: cadetblue;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+#button:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#flexcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: auto;
+    padding-top: 2rem;
+    object-fit: cover;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
