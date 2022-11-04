@@ -32,7 +32,7 @@ if (isset($msg)) {
         <br>
         <input type="button" value="Submit" id="button" onclick="getvalue();">
     </form>
-    <img src="/Challenges/1/reflect.png">
+    <img src="/Challenges/1/reflect.png" alt="frog">
 
 </div>
 

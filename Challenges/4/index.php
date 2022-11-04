@@ -48,7 +48,6 @@ if (!empty($_POST)) {
 
     <center><br><br><br><br><br><br><br>
         <h1 class="container">Login/Register</h1>
-
         <div class="form">
             <form method="post" accept-charset="utf-8">
                 <label>Username: </label><input type="text" name="username"
