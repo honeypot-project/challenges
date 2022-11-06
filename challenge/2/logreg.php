@@ -4,8 +4,8 @@ error_reporting(0);
 $cookie_name = "session";
 
 $servername = "localhost";
-$username = "root";
-$password = "root";
+$username = "challenge2";
+$password = "dummypass123";
 $database = "tut";
 
 $conn = mysqli_connect($servername, $username, $password, $database);

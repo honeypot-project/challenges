@@ -1,8 +1,8 @@
 <?php
 // Connect to database
 $dbhost = "localhost";
-$dbname = "sqlidemo";
-$dbuser = "demo";
+$dbname = "sqli";
+$dbuser = "challenge4";
 $dbpass = "youllneverguessmypassword";
 $db = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 $authorized = false;
@@ -70,7 +70,7 @@ if (!empty($_POST)) {
         <p>You have successfully bypassed authentication security.</p>
         <h2>FLAG{YOU-ARE-A-BEAST-GOOD-JOB-NERD}</h2>
         <form><input class="logout" type="submit" value="Logout"></form>
-        <img src="4/hackerman.jpg" alt="Hackerman!">
+        <img src="./hackerman.jpg" alt="Hackerman!">
     </div>
 
 <?php } else { ?>

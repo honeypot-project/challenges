@@ -6,7 +6,7 @@ $flag = '';
 $msg = ($_GET['msg']);
 
 if (isset($msg)) {
-    if ($msg == "<img src='' onerror=alert(1)>" || $msg == '<img src="" onerror=alert(1)') {
+    if ($msg == "<img src='' onerror=alert(1)>" || $msg == '<img src="" onerror=alert(1)>') {
         $flag = 'FLAG{XSS-IS-EASY-PEASY-LEMON-SQEEZY}';
     } else if ($msg) {
         $msg = htmlspecialchars($msg);
