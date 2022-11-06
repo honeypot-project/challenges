@@ -6,7 +6,7 @@ $flag = '';
 $msg = ($_GET['msg']);
 
 if (isset($msg)) {
-    if ($msg == "<img src='' onerror=alert(1)>" || $msg == '<img src="" onerror=alert(1)>') {
+    if ($msg == "<img src='' onerror=alert(1)>" || $msg == '<img src="" onerror=alert(1)') {
         $flag = 'FLAG{XSS-IS-EASY-PEASY-LEMON-SQEEZY}';
     } else if ($msg) {
         $msg = htmlspecialchars($msg);
@@ -18,9 +18,8 @@ if (isset($msg)) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <title>honeypot 16</title>
-    <link rel="stylesheet" href="1/screen.css">
+    <title>Honeypot 16</title>
+    <link rel="stylesheet" href="./screen.css">
 </head>
 <body>
 
@@ -32,7 +31,7 @@ if (isset($msg)) {
         <br>
         <input type="button" value="Submit" id="button" onclick="getvalue();">
     </form>
-    <img src="1/reflect.png" alt="frog">
+    <img src="./reflect.png" alt="frog">
 
 </div>
 

@@ -20,8 +20,8 @@
 --
 
 CREATE DATABASE /*!32312 IF NOT EXISTS*/ `sqlidemo` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
-CREATE USER 'challenge4'@'localhost' IDENTIFIED BY 'youllneverguessmypassword';
-GRANT SELECT ON sqli.* TO 'challenge4'@'localhost';
+CREATE USER 'demo'@'localhost' IDENTIFIED BY 'youllneverguessmypassword';
+GRANT SELECT ON sqlidemo.* TO 'demo'@'localhost';
 
 USE `sqlidemo`;
 

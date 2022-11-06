@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="069325b1-bc0c-4de7-b64b-f122d9b15f18" name="honeypot" url="http://64.225.68.102">
+        <fileTransfer rootFolder="/var/www" accessType="SFTP" host="64.225.68.102" port="22" sshConfigId="c3c6a3cc-3ad2-4b11-8fd3-232a238f9c1b" sshConfig="root@64.225.68.102:22 agent" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

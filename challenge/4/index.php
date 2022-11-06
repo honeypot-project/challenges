@@ -1,7 +1,7 @@
 <?php
 // Connect to database
 $dbhost = "localhost";
-$dbname = "sqli";
+$dbname = "sqlidemo";
 $dbuser = "challenge4";
 $dbpass = "youllneverguessmypassword";
 $db = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
@@ -41,7 +41,7 @@ if (!empty($_POST)) {
     <meta charset="UTF-8">
     <title>HoneyPot 16</title>
     <meta name="description" content="Hint: Use SQL injection to bypass authentication and login as Admin!">
-    <link rel="stylesheet" type="text/css" href="2/login_style.css">
+    <link rel="stylesheet" type="text/css" href="/challenge/2/login_style.css">
 </head>
 <body>
 <?php if (!$authorized) { ?>

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>HoneyPot 16</title>
-    <link rel="icon" type="image/x-icon" href="challange-assets/media/favicon.ico">
-    <link rel="stylesheet" href="challange-assets/css/reset.css">
-    <link rel="stylesheet" href="challange-assets/css/screen.css">
+    <link rel="icon" type="image/x-icon" href="assets/media/favicon.ico">
+    <link rel="stylesheet" href="challenge-assets/css/reset.css">
+    <link rel="stylesheet" href="challenge-assets/css/screen.css">
 </head>
 <body>
 
