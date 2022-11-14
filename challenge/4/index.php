@@ -1,4 +1,5 @@
 <?php
+require_once 'challenge/logincheck.php';
 checkLogin();
 // Connect to database
 $dbhost = "localhost";

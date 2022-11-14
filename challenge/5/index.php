@@ -1,4 +1,5 @@
 <?php
+require_once 'challenge/logincheck.php';
 checkLogin();
 header('This-is-odd: L1MzQ1JFVC50eHQ=');
 ?>

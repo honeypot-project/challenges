@@ -1,5 +1,6 @@
 <?php
 
+require_once 'challenge/logincheck.php';
 checkLogin();
 
 $flag = "<h3>FLAG{DEFAULT-CREDENTIALS-ARE-A-NO-GO}</h3>";

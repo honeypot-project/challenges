@@ -1,5 +1,6 @@
 <?php
 
+require_once 'challenge/logincheck.php';
 checkLogin();
 
 $cookie_name = "session";

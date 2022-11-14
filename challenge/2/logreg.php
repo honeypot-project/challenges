@@ -1,6 +1,5 @@
-<link rel="stylesheet" href="login_style.css">
 <?php
-
+require_once 'challenge/logincheck.php';
 checkLogin();
 
 error_reporting(0);
@@ -86,3 +85,4 @@ if (isset($_POST["login"])) {
 }
 ?>
 
+<link rel="stylesheet" href="login_style.css">
