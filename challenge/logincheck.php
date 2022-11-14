@@ -20,6 +20,7 @@ function checkLogin()
         curl_close($ch);
         if ($response_code != 200) {
             header('Location: /login.html');
+            die();
         }
     } else {
         header('Location: /login.html');
