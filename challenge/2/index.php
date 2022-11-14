@@ -1,6 +1,7 @@
 <?php
 
-require_once 'challenge/logincheck.php';
+define('__ROOT__', dirname(dirname(__FILE__)));
+require_once(__ROOT__.'/logincheck.php');
 checkLogin();
 
 $cookie_name = "session";
