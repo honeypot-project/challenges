@@ -1,3 +1,7 @@
+<?php
+checkLogin();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

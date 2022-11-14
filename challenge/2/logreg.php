@@ -1,5 +1,8 @@
 <link rel="stylesheet" href="login_style.css">
 <?php
+
+checkLogin();
+
 error_reporting(0);
 $cookie_name = "session";
 

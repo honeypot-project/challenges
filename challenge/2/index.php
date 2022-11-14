@@ -1,5 +1,7 @@
 <?php
 
+checkLogin();
+
 $cookie_name = "session";
 
 if (isset($_COOKIE[$cookie_name])) {

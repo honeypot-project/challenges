@@ -1,5 +1,6 @@
-<link rel="stylesheet" type="text/css" href="/challenge/3-AdminPanel/style.css">
 <?php
+
+checkLogin();
 
 $flag = "<h3>FLAG{DEFAULT-CREDENTIALS-ARE-A-NO-GO}</h3>";
 if (isset($_GET['passwd'])) {
@@ -10,3 +11,5 @@ if (isset($_GET['passwd'])) {
             echo "<h4>Get the hell outta here, run run run!</h4>";
     }
 }
+?>
+<link rel="stylesheet" type="text/css" href="/challenge/3-AdminPanel/style.css">

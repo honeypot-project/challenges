@@ -1,4 +1,5 @@
 <?php
+checkLogin();
 // Connect to database
 $dbhost = "localhost";
 $dbname = "sqli";
