@@ -1,4 +1,6 @@
 <?php
+// import function
+require_once 'challenge/logincheck.php';
 checkLogin();
 ?>
 

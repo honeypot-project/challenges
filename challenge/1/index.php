@@ -1,6 +1,6 @@
 <?php
 
-// Check if vertx cookie is present
+require_once 'challenge/logincheck.php';
 checkLogin();
 
 
