@@ -23,5 +23,6 @@ function checkLogin()
         }
     } else {
         header('Location: /login.html');
+        die();
     }
 }
