@@ -15,9 +15,9 @@ function checkLogin()
         curl_setopt($ch, CURLOPT_COOKIE, 'vertx-web.session=' . $_COOKIE['vertx-web_session']);
 
         // get response
-        $response = curl_exec($ch);
-        curl_close($ch);
+        curl_exec($ch);
         $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        curl_close($ch);
         if ($response_code != 200) {
             header('Location: /login.html');
         }
