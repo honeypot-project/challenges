@@ -1,20 +1,9 @@
 <?php
 define('__ROOT__', dirname(dirname(__FILE__)));
-require_once(__ROOT__.'/logincheck.php');
+require_once(__ROOT__ . '/logincheck.php');
 checkLogin();
-
-
-$msg = ($_GET['msg']);
-
-if (isset($msg)) {
-    if ($msg == "<img src='' onerror=alert(1)>" || $msg == '<img src="" onerror=alert(1)>') {
-        $flag = 'FLAG{XSS-IS-EASY-PEASY-LEMON-SQEEZY}';
-    } else if ($msg) {
-        $msg = htmlspecialchars($msg);
-    }
-}
-
 error_reporting(0);
+
 $msg = '';
 $flag = '';
 
@@ -35,7 +24,7 @@ if (isset($msg)) {
     <meta charset="UTF-8">
     <title></title>
     <title>honeypot 16</title>
-    <link rel="stylesheet" href="1/screen.css">
+    <link rel="stylesheet" href="./screen.css">
 </head>
 <body>
 
@@ -47,16 +36,16 @@ if (isset($msg)) {
         <br>
         <input type="button" value="Submit" id="button" onclick="getvalue();">
     </form>
-    <img src="1/reflect.png" alt="frog">
+    <img src="./reflect.png" alt="frog">
 
 </div>
 
 <script type="text/javascript">
-  function getvalue () {
+    function getvalue() {
 
-    document.querySelector('#msg').value = document.getElementById('msg').value
-    document.querySelector('#myForm').submit()
-  }
+        document.querySelector('#msg').value = document.getElementById('msg').value
+        document.querySelector('#myForm').submit()
+    }
 </script>
 
 </body>
