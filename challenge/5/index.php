@@ -1,5 +1,8 @@
 <?php
-header('Very-Odd: L1MzQ1JFVC50eHQ=');
+define('__ROOT__', dirname(dirname(__FILE__)));
+require_once(__ROOT__.'/logincheck.php');
+checkLogin();
+header('This-is-odd: L1MzQ1JFVC50eHQ=');
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +10,7 @@ header('Very-Odd: L1MzQ1JFVC50eHQ=');
 <head>
     <meta charset="UTF-8">
     <title>HoneyPot 16</title>
-    <link rel="stylesheet" type="text/css" href="/challenge-assets/css/login_style.css">
+    <link rel="stylesheet" type="text/css" href="../login_style.css">
     <!--<p>Keep looking, I'm not hidden in the HTML</p>-->
 </head>
 <body>

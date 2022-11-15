@@ -1,5 +1,9 @@
 <?php
+define('__ROOT__', dirname(dirname(__FILE__)));
+require_once(__ROOT__ . '/logincheck.php');
+checkLogin();
 error_reporting(0);
+
 $msg = '';
 $flag = '';
 
@@ -36,11 +40,11 @@ if (isset($msg)) {
 </div>
 
 <script type="text/javascript">
-  function getvalue () {
+    function getvalue() {
 
-    document.querySelector('#msg').value = document.getElementById('msg').value
-    document.querySelector('#myForm').submit()
-  }
+        document.querySelector('#msg').value = document.getElementById('msg').value
+        document.querySelector('#myForm').submit()
+    }
 </script>
 
 </body>

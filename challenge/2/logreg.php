@@ -1,5 +1,9 @@
-<link rel="stylesheet" href="login_style.css">
 <?php
+
+define('__ROOT__', dirname(dirname(__FILE__)));
+require_once(__ROOT__.'/logincheck.php');
+checkLogin();
+
 error_reporting(0);
 $cookie_name = "session";
 
@@ -83,3 +87,4 @@ if (isset($_POST["login"])) {
 }
 ?>
 
+<link rel="stylesheet" href="login_style.css">
