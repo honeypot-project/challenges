@@ -12,13 +12,14 @@ $authorized = false;
 
 // Get user input
 if (!empty($_POST)) {
+    $error = (mysqli_report(MYSQLI_REPORT_ERROR));
     $user = $_POST['username'];
     $pass = $_POST['password'];
     // Validate user
     $query = 'SELECT * FROM users WHERE username="' . $user . '" AND password="' . $pass . '"';
     $result = mysqli_query($db, $query);
     if (!$result) {
-        $error = mysqli_error($db);
+        $error = (mysqli_report(MYSQLI_REPORT_ERROR));
     } else if (mysqli_num_rows($result) > 0) {
         $authorized = true;
         $rows = mysqli_fetch_assoc($result);
@@ -45,6 +46,7 @@ if (!empty($_POST)) {
     <title>HoneyPot 16</title>
     <meta name="description" content="Hint: Use SQL injection to bypass authentication and login as Administrator!">
     <link rel="stylesheet" type="text/css" href="../login_style.css">
+    <link rel="stylesheet" type="text/css" href="./screen.css">
 </head>
 <body>
 <?php if (!$authorized) { ?>
@@ -59,7 +61,6 @@ if (!empty($_POST)) {
                 <label>Password: </label><input type="password" name="password" value="" placeholder="Password"
                                                 required><br><br>
                 <input type="submit" name="login" value="Login" class="button">
-                <?php if (!empty($error)) echo '<p class="error">' . $error . '</p>'; ?>
             </form>
         </div>
     </center>
