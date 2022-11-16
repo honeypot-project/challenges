@@ -16,6 +16,5 @@ checkLogin();
 <body>
 <h1>V nz n svyr, tb naq svaq zr</h1>
 <img src="./robot.png" alt="robot">
-<!--    <p>Hint: I am a file</p>-->
 </body>
 </html>

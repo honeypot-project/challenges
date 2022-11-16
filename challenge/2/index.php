@@ -35,6 +35,7 @@ if (isset($_COOKIE[$cookie_name])) {
                                             required><br><br>
             <input type="submit" name="login" value="Login" class="button">
             <input type="submit" name="register" value="Register" class="button">
+            <img src="./admin.png" height="1px" width="1px">
         </form>
     </div>
 </center>
