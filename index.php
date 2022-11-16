@@ -1,8 +1,8 @@
 <?php
-//// import function
-//require_once 'challenge/logincheck.php';
-//checkLogin();
-//?>
+// import function
+require_once 'challenge/logincheck.php';
+checkLogin();
+?>
 
 <!DOCTYPE html>
 <html lang="en">

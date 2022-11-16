@@ -5,7 +5,7 @@ checkLogin();
 
 $cookie_name = "session";
 if (isset($_COOKIE[$cookie_name])) {
-    $cookie_value = (base64_decode($_COOKIE[$cookie_name]));
+    $cookie_value = base64_decode((base64_decode($_COOKIE[$cookie_name])));
 
     echo "<br><br><br><center><h1>Welcome to your personal area, $cookie_value!</h1></center>";
 

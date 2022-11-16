@@ -2,7 +2,7 @@
 define('__ROOT__', dirname(dirname(__FILE__)));
 require_once(__ROOT__.'/logincheck.php');
 checkLogin();
-header('This-is-odd: L1MzQ1JFVC50eHQ=');
+header('Content-Odd: 2f 53 33 43 52 45 54 2e 74 78 74');
 ?>
 
 <!DOCTYPE html>
@@ -10,8 +10,8 @@ header('This-is-odd: L1MzQ1JFVC50eHQ=');
 <head>
     <meta charset="UTF-8">
     <title>HoneyPot 16</title>
+    <meta name="hint" content="Keep looking, I'm not hidden in the HTML bro...">
     <link rel="stylesheet" type="text/css" href="../login_style.css">
-    <!--<p>Keep looking, I'm not hidden in the HTML</p>-->
 </head>
 <body>
 <h1 id="challenge5">I am hidden in plain sight</h1>

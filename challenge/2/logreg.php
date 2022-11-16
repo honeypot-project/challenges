@@ -1,5 +1,5 @@
+<link rel="stylesheet" href="login_style.css">
 <?php
-
 define('__ROOT__', dirname(dirname(__FILE__)));
 require_once(__ROOT__.'/logincheck.php');
 checkLogin();
@@ -34,7 +34,7 @@ if (isset($_POST["login"])) {
     $count = mysqli_num_rows($result);
 
     if ($count >= 1) {
-        $cookie_value = base64_encode($user);
+        $cookie_value = base64_encode(base64_encode($user));
         setrawcookie($cookie_name, $cookie_value, time() + (10 * 365 * 24 * 60 * 60), "/");
         header("Location: personal.php");
     } else {
@@ -86,5 +86,3 @@ if (isset($_POST["login"])) {
     $conn->close();
 }
 ?>
-
-<link rel="stylesheet" href="login_style.css">

@@ -10,7 +10,7 @@ checkLogin();
     <meta charset="UTF-8">
     <title>HoneyPot 16</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <!--  <a href = "challenge/3-AdminPanel/source.txt>A tiny hint hihi</a>-->
+    <meta name="Hint" content="challenge/3-AdminPanel/source.txt" />
     <title>Honeypot 16</title>
 </head>
 <body>
