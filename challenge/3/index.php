@@ -10,6 +10,7 @@ checkLogin();
 <head>
     <meta charset="UTF-8">
     <title>HoneyPot 16</title>
+    <meta name="Hint" content="I am a file" />
     <link rel="stylesheet" href="../login_style.css">
 </head>
 <body>

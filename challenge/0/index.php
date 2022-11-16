@@ -8,7 +8,6 @@ checkLogin();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
     <title>honeypot 16</title>
     <link rel="stylesheet" href="./screen.css">
 </head>
