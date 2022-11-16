@@ -67,7 +67,7 @@ if (!empty($_POST)) {
     <p class="hint">The goal of this challenge is to login
     <br>with a valid user.
 
-<?php } else if ($_POST['username'] != $user || $_POST['password'] != $pass) { ?>
+<?php } else if ($_POST['username'] === $user || $_POST['password'] != $pass) { ?>
     <div>
         <h2>Welcome <?php echo $user; ?>!</h2>
         <p>Congratulations on completing the SQL injection challenge!</p>
