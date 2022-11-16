@@ -13,7 +13,7 @@ checkLogin();
     <link rel="stylesheet" href="../login_style.css">
 </head>
 <body>
-<h1>Look on the page of the...</h1>
+<h1>V nz n svyr, tb naq svaq zr</h1>
 <img src="./robot.png" alt="robot">
 <!--    <p>Hint: I am a file</p>-->
 </body>
