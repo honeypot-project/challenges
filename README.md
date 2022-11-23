@@ -1,8 +1,9 @@
 # Honeypot challenges:
 
-## 1 - XSS
-## 2 - cookie manipulation
-## 3 - default admin credentials
-## 4 - sql injection
-## 5 - response headers
-## apiKeys - rickroll
+## 0 - Hidden Challenge
+## 1 - Reflected XSS
+## 2 - Cookie Manipulation
+## 3 - Default Admin Credentials
+## 4 - SQL Injection
+## 5 - Response Headers
+## ApiKeys - Rickroll
