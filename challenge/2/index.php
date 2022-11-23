@@ -17,7 +17,6 @@ if (isset($_COOKIE[$cookie_name])) {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Honeypot 16</title>
-    <meta name="description" content="HINT: become admin!!!">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="login_style.css">
 </head>
