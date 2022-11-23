@@ -8,7 +8,7 @@ checkLogin();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HoneyPot 16</title>
+    <title>Challenge 3</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <meta name="Hint" content="challenge/3-AdminPanel/source.txt" />
     <title>Honeypot 16</title>

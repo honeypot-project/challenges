@@ -8,7 +8,7 @@ checkLogin();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HoneyPot 16</title>
+    <title>Challenges</title>
     <link rel="icon" type="image/x-icon" href="assets/media/favicon.ico">
     <link rel="stylesheet" href="challenge-assets/css/reset.css">
     <link rel="stylesheet" href="challenge-assets/css/screen.css">

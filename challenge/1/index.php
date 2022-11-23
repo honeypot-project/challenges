@@ -23,7 +23,7 @@ if (isset($msg)) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Honeypot 16</title>
+    <title>Challenge 1</title>
     <link rel="stylesheet" href="./screen.css">
 </head>
 <body>

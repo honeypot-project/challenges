@@ -24,6 +24,6 @@ if (isset($_COOKIE[$cookie_name])) {
 ?>
 
 <head>
-    <title>Honeypot 16</title>
+    <title>Challenge 2</title>
     <link rel="stylesheet" href="login_style.css">
 </head>

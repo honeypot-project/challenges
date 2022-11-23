@@ -9,7 +9,7 @@ header('Content-Odd: 2f 53 33 43 52 45 54 2e 74 78 74');
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HoneyPot 16</title>
+    <title>Challenge 5</title>
     <meta name="hint" content="Keep looking, I'm not hidden in the HTML bro...">
     <link rel="stylesheet" type="text/css" href="../login_style.css">
 </head>

@@ -43,7 +43,7 @@ if (!empty($_POST)) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HoneyPot 16</title>
+    <title>Challenge 4</title>
     <meta name="description" content="Hint: Use SQL injection to bypass authentication and login as Administrator!">
     <link rel="stylesheet" type="text/css" href="../login_style.css">
     <link rel="stylesheet" type="text/css" href="./screen.css">

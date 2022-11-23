@@ -9,7 +9,7 @@ checkLogin();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HoneyPot 16</title>
+    <title>Challenge 3</title>
     <meta name="Hint" content="I am a file" />
     <link rel="stylesheet" href="../login_style.css">
 </head>
